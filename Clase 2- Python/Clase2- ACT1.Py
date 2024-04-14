@@ -8,3 +8,5 @@ def elegircolor(colorobjeto):
         print("no es rojo pero agunte independiente igual")
 
 elegircolor(colorobjeto)
+
+#Terminado
