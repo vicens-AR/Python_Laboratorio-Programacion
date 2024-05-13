@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Simple</title>
+    <title>{%block body} Home {%endblock}</title>
 </head>
 <body>
 
-    <header>
-        <h1>Bienvenido a mi página web</h1>
-    </header>
-
-    <main>
-        <p>Esta es una página web simple creada con HTML.</p>
-
-        <h2>Lista de elementos</h2>
-        <ul>
-            <li>Elemento 1</li>
-            <li>Elemento 2</li>
-            <li>Elemento 3</li>
-        </ul>
-    </main>
+    <nav class="navbar-0">
+        <div class="navbar-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('Contacto')}}">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('Curiosidades')}}">Curiosidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('Informacion')}}">Información</a>
+                    </li>
+                </ul>
+        </div>
+    </nav>
 </body>
 </html>
